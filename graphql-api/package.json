@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "tsc",
     "start": "npm run compile && node ./dist/index.js",
-    "dev": "nodemon api/src/index.ts"
+    "dev": "nodemon api/src/index.ts",
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",
