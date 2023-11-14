@@ -6,9 +6,9 @@
 
 <form method="post" use:enhance bind:this={thisForm}>
   <div
-    class=" w-2/5 mx-auto flex flex-col items-center justify-center h-[25rem] gap-3"
+    class=" w-2/5 mx-auto flex flex-col items-center justify-center h-auto gap-3 mt-10"
   >
-    <h1 class="text-3xl">Register</h1>
+    <h1 class="text-3xl max-md:text-xl">Register</h1>
     <input
       class="border-2 border-gray-400 p-2 rounded-full w-full"
       type="text"
@@ -36,6 +36,25 @@
     <div>
       {#if form?.error}
         <p><small>{form?.message}</small></p>
+      {/if}
+      {#if form?.weakPassword}
+        <p class="xs:text-[12px] max-xs:text-[9px]">
+          Minimum password requirements:
+        </p>
+        <ul class="list-disc list-inside">
+          <li class="xs:text-[12px] max-xs:text-[9px]">
+            At least 8 characters
+          </li>
+          <li class="xs:text-[12px] max-xs:text-[9px]">
+            At least one Uppercase character
+          </li>
+          <li class="xs:text-[12px] max-xs:text-[9px]">
+            At least one lowercase character
+          </li>
+          <li class="xs:text-[12px] max-xs:text-[9px]">
+            At least 3 special characters OR numbers
+          </li>
+        </ul>
       {/if}
     </div>
 
