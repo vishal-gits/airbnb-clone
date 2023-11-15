@@ -63,7 +63,7 @@
   $: {
     console.log("This is for displaydiv", bookingValidity);
     if (bookingValidity && $user) {
-      displaydiv.style.display = "block";
+      displaydiv ? (displaydiv.style.display = "block") : "";
     }
   }
 
