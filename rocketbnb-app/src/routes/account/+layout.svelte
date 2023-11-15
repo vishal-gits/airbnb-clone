@@ -12,7 +12,7 @@
     "hover:underline bg-gray-300 rounded-full px-3 py-2 inline-flex gap-x-1  max-xs:w-120 max-vs:text-[14px] max-vs:px-1";
 </script>
 
-<div class="h-auto flex justify-evenly">
+<div class="h-auto flex justify-evenly mt-5">
   <a href="/account/profile"
     ><button
       title="Check your Profile Details"
