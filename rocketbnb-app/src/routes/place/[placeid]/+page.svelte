@@ -224,7 +224,7 @@
                 class="w-10/12 text-center mx-2 border border-[#f53850] rounded-full"
                 type="text"
                 bind:value={$numGuests}
-                placeholder="Add Guests"
+                placeholder="Add"
               />
               <button on:click={handleDec}>{@html icons.minusCircle}</button>
             </div>
