@@ -18,6 +18,13 @@
   import { goto } from "$app/navigation";
   import { enhance } from "$app/forms";
   import { Block } from "@uploadcare/blocks";
+  import { onMount } from "svelte";
+  import { invalidate } from "$app/navigation";
+
+  onMount(() => {
+    invalidate("/place/[placeid]");
+  });
+
   let showPhotos = 0;
   // console.log(data);
   // console.log($user);
