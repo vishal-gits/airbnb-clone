@@ -18,10 +18,10 @@
   import { goto } from "$app/navigation";
   import { enhance } from "$app/forms";
   import { Block } from "@uploadcare/blocks";
-
+  let showPhotos = 0;
   // console.log(data);
   // console.log($user);
-  let showPhotos = 0;
+
   let displaydiv: HTMLElement;
   let dateOrder: number;
 
