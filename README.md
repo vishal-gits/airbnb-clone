@@ -2,6 +2,8 @@ This is a clone of a accomodation booking app, similar to airbnb.
 
 The project is live on https://rocketbnb.vercel.app/
 
+A walkthrough of the project is available on the link - https://docs.google.com/presentation/d/1Ze8CYDpIz2o1K0BjwinGUk85yctIAqF0_0NEty0CwD4/
+
 Features included in this are
 
 This is developed on sveltekit framework with graphql/apollo,tailwindcss, typescript using mongodb for database
