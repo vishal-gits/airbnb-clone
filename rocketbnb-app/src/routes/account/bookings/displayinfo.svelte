@@ -1,7 +1,7 @@
 <script lang="ts">
   export let trip: bookingData;
   import { icons } from "$lib/icons";
-  console.log(trip.place.photos[0]);
+  // console.log(trip.place.photos[0]);
 </script>
 
 <div

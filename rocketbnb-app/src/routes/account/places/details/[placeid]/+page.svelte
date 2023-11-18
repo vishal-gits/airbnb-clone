@@ -23,11 +23,11 @@
   // console.log(placeInfo.wifi);
 
   let oldArr: string[];
-  $: {
-    if (mainPhoto) {
-      console.log("This is from page.svelte", $mainPhoto);
-    }
-  }
+  // $: {
+  //   if (mainPhoto) {
+  //     console.log("This is from page.svelte", $mainPhoto);
+  //   }
+  // }
 </script>
 
 <div class="border w-4/5 mx-auto mt-8 mb-10 border-[#f53850] rounded-2xl p-2">

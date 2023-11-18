@@ -32,7 +32,7 @@
   const handleInc = (e: { preventDefault: any }) => {
     e.preventDefault();
     guestCount++;
-    console.log(typeof guestCount);
+    // console.log(typeof guestCount);
     $numGuests = guestCount.toString();
   };
   const handleDec = (e: { preventDefault: any }) => {

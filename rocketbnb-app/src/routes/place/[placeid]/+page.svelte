@@ -29,8 +29,8 @@
 
   let bookingValidity: boolean;
   let bookingValidityWithUser: boolean;
-  console.log($page.url.pathname);
-  $: console.log($bookingUrl);
+  // console.log($page.url.pathname);
+  // $: console.log($bookingUrl);
   $: {
     if ($checkInDate && $checkOutDate) {
       $numNights = differenceInCalendarDays(
@@ -63,8 +63,8 @@
   }
 
   $: {
-    console.log("This is for displaydiv", bookingValidity);
-    if (bookingValidity && $user && browser) {
+    // console.log("This is for displaydiv", bookingValidity);
+    if (bookingValidity && $user) {
       displaydiv ? (displaydiv.style.display = "block") : "";
     }
   }
@@ -77,7 +77,10 @@
       );
     } else if (bookingValidity && !$user) {
       e.preventDefault();
-      $bookingUrl = $page.url.pathname;
+      if (browser) {
+        $bookingUrl = $page.url.pathname;
+      }
+      // $bookingUrl = $page.url.pathname;
       goto("/login");
     } else if (bookingValidity && $user && !Number($phoneNum)) {
       e.preventDefault();
@@ -110,7 +113,7 @@
     e.preventDefault();
     if (guestCount < place.maxGuests) {
       guestCount++;
-      console.log(typeof guestCount);
+      // console.log(typeof guestCount);
       $numGuests = guestCount.toString();
     }
   };

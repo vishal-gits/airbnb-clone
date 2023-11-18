@@ -13,13 +13,13 @@
     (trip: { checkInDate: string | number | Date }) =>
       compareDesc(new Date(), new Date(trip.checkInDate)) === 1
   );
-  console.log(checkUpcoming);
+  // console.log(checkUpcoming);
 
   let checkPrevious = booking.some(
     (trip: { checkInDate: string | number | Date }) =>
       compareDesc(new Date(), new Date(trip.checkInDate)) !== 1
   );
-  console.log(checkPrevious);
+  // console.log(checkPrevious);
 </script>
 
 <div class="sm:w-3/5 mx-auto p-5 max-sm:w-10/12">

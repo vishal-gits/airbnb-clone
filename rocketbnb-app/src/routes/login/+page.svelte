@@ -17,7 +17,7 @@
 
   const handleBooking = () => {
     if ($bookingUrl) {
-      console.log($bookingUrl);
+      // console.log($bookingUrl);
       routetobooking($bookingUrl);
     } else {
       goto("/");
