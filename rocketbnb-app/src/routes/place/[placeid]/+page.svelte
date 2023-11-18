@@ -18,7 +18,6 @@
   import { goto } from "$app/navigation";
   import { enhance } from "$app/forms";
   import { Block } from "@uploadcare/blocks";
-  import { browser } from "$app/environment";
 
   let showPhotos = 0;
   // console.log(data);
@@ -77,10 +76,8 @@
       );
     } else if (bookingValidity && !$user) {
       e.preventDefault();
-      if (browser) {
-        $bookingUrl = $page.url.pathname;
-      }
-      // $bookingUrl = $page.url.pathname;
+
+      $bookingUrl = $page.url.pathname;
       goto("/login");
     } else if (bookingValidity && $user && !Number($phoneNum)) {
       e.preventDefault();
