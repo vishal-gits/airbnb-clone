@@ -18,6 +18,7 @@
   import { goto } from "$app/navigation";
   import { enhance } from "$app/forms";
   import { Block } from "@uploadcare/blocks";
+  import { browser } from "$app/environment";
 
   let showPhotos = 0;
   // console.log(data);
@@ -63,7 +64,7 @@
 
   $: {
     console.log("This is for displaydiv", bookingValidity);
-    if (bookingValidity && $user) {
+    if (bookingValidity && $user && browser) {
       displaydiv ? (displaydiv.style.display = "block") : "";
     }
   }
