@@ -4,7 +4,7 @@ This is developed on Sveltekit framework with Graphql/apollo,Tailwindcss, Typesc
 
 The project is live on https://rocketbnb.vercel.app/
 
-A walkthrough of the project is available on the link - https://docs.google.com/presentation/d/1Ze8CYDpIz2o1K0BjwinGUk85yctIAqF0_0NEty0CwD4/
+A walkthrough of the project is available on the link -https://tinyurl.com/2skppma7
 
 Features included in this are
 
