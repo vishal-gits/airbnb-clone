@@ -1,4 +1,4 @@
-This is a clone of a accomodation booking app, similar to airbnb.
+This is a accomodation booking app, where travellers can book an accomodation and hosts can post a accomodation for rent.
 
 This is developed on Sveltekit framework with Graphql/apollo,Tailwindcss, Typescript using Mongoose, Mongodb Atlas for database.
 
